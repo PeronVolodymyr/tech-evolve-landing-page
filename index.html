@@ -15,6 +15,7 @@
     .shadow-soft{box-shadow:0 8px 30px rgba(0,0,0,.06)}
     .circle-btn{width:44px;height:44px;border-radius:9999px;display:grid;place-items:center}
     .hero-bg{background-image:url('./assets/images/banner.png');background-size:cover;background-repeat:no-repeat;background-position:right}
+    .map-bg{background-image:url('./assets/images/map.png');background-size:auto;background-repeat:no-repeat;background-position:left}
   </style>
 </head>
 <body class="text-[color:var(--body)] bg-[#F8FAFF]">
@@ -230,30 +231,64 @@
     </div>
   </section>
 
-  <section id="contact" class="py-20">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
-      <div class="reveal">
-        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Contact Us</p>
-        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Keep in <span class="text-[color:var(--brand)]">Touch</span></h3>
-        <ul class="mt-6 space-y-3">
-          <li class="flex items-center gap-3">✉️ hello@techevolve.com</li>
-          <li class="flex items-center gap-3">📞 +1 (555) 666-66-66</li>
-          <li class="flex items-center gap-3">📍 958 Long Branch St, Sacramento, CA 95835</li>
-        </ul>
-        <div class="mt-8 rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-soft">
-          <img src="./assets/images/map.png" alt="World map" class="w-full h-full object-cover" />
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 map-bg">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Left column is just the map background space -->
+        <div class="hidden lg:block"></div>
+
+        <!-- Right column: single component (details + form) -->
+        <div class="reveal">
+          <div class="w-full border border-slate-200 rounded-2xl bg-white p-8 shadow-soft">
+            <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Contact Us</p>
+            <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">
+              Keep in <span class="text-[color:var(--brand)]">Touch</span>
+            </h3>
+
+            <ul class="mt-6 space-y-4 text-[color:var(--body)]">
+              <li class="flex items-center gap-3">✉️ hello@techevolve.com</li>
+              <li class="flex items-center gap-3">📞 +1 (555) 666-66-66</li>
+              <li class="flex items-center gap-3">📍 958 Long Branch St, Sacramento, CA 95835</li>
+            </ul>
+
+            <form class="mt-8 space-y-6">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-[color:var(--text)]">Name</label>
+                  <input
+                          type="text"
+                          class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]"
+                          placeholder="Jane"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-[color:var(--text)]">Email</label>
+                  <input
+                          type="email"
+                          class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]"
+                          placeholder="jane@company.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-[color:var(--text)]">Message</label>
+                <textarea
+                        rows="5"
+                        class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]"
+                        placeholder="Tell us about your project..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-8 py-3 font-semibold shadow-soft hover:bg-blue-700 transition">
+                Submit Now
+                <img src="assets/images/buttons/4.png" alt="" class="w-4 h-4" />
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <form class="reveal grid gap-4 border border-slate-200 rounded-2xl bg-white p-6 shadow-soft">
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div><label class="block text-sm font-semibold text-[color:var(--text)]">Name</label><input type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="Jane" /></div>
-          <div><label class="block text-sm font-semibold text-[color:var(--text)]">Email</label><input type="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="jane@company.com" /></div>
-        </div>
-        <div><label class="block text-sm font-semibold text-[color:var(--text)]">Message</label><textarea rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="Tell us about your project..."></textarea></div>
-        <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 font-semibold shadow-soft">
-          Submit Now <img src="assets/images/buttons/4.png" alt="" class="w-4 h-4" />
-        </button>
-      </form>
     </div>
   </section>
 
