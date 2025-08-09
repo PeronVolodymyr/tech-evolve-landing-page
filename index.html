@@ -70,31 +70,90 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about" class="py-20">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
-      <div>
-        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our History</p>
-        <h2 class="mt-2 text-3xl md:text-4xl font-bold text-[color:var(--text)]">
-          Trusted Experts in <span class="text-[color:var(--brand)]">Services</span> — Built on Experience, Fueled by Passion
-        </h2>
-        <p class="mt-5 text-[18px] leading-relaxed max-w-2xl">
-          We partner with clients to deliver measurable outcomes. Our team blends domain knowledge
-          with engineering excellence to ship robust, scalable systems.
-        </p>
-        <div class="mt-10 grid gap-6 sm:grid-cols-2">
-          <div class="rounded-2xl bg-white/90 backdrop-blur border border-slate-200 shadow-soft p-6">
-            <p class="text-sm text-slate-500">10+ Years</p>
-            <p class="mt-1 text-lg font-semibold text-[color:var(--text)]">Of Successful Engagements</p>
-          </div>
-          <div class="rounded-2xl bg-white/90 backdrop-blur border border-slate-200 shadow-soft p-6">
-            <p class="text-sm text-slate-500">6k+</p>
-            <p class="mt-1 text-lg font-semibold text-[color:var(--text)]">Certified Experts</p>
-          </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <!-- Top row: label + title (left) and description (right) -->
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <div class="col-span-12 lg:col-span-6">
+          <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our History</p>
+          <h2 class="mt-2 text-3xl md:text-4xl font-bold text-[color:var(--text)]">
+            Trusted Experts in <span class="text-[color:var(--brand)]">Services</span> — Built on Experience, Fueled by Passion
+          </h2>
+        </div>
+        <div class="col-span-12 lg:col-span-6">
+          <p class="text-[15px] leading-7 text-[color:var(--body)]">
+            Lorem ipsum dolor sit amet consectetur. Sit dictum mi blandit enim vel consectetur
+            nam est risus. Tristique fringilla ac enim nibh scelerisque tempor ac. Lacus amet
+            mauris diam diam pretium. Tellus lacus pharetra orci ac quis adipiscing arcu morbi nunc.
+          </p>
         </div>
       </div>
-      <div class="relative">
-        <div class="pointer-events-none absolute -inset-6 rounded-[28px] opacity-60 blur-2xl bg-gradient-to-r from-[#E9EEFF] via-[#F3F6FF] to-transparent"></div>
-        <img src="assets/images/people/team.png" alt="Team working" class="relative w-full h-auto rounded-[28px] border border-slate-100 shadow-[0_20px_60px_rgba(0,0,0,0.07)] object-cover" />
+
+      <!-- Bottom row: illustration (left) + stacked cards (right) -->
+      <div class="mt-10 grid lg:grid-cols-12 gap-12 items-start">
+        <!-- Left: illustration -->
+        <div class="col-span-12 lg:col-span-6">
+          <div class="relative overflow-hidden rounded-[28px] bg-white shadow-[0_20px_60px_rgba(0,0,0,0.07)]">
+            <img src="assets/images/people/team.png" alt="Team illustration" class="w-full h-auto object-cover">
+          </div>
+        </div>
+
+        <!-- Right: cards stack -->
+        <div class="col-span-12 lg:col-span-6 flex flex-col gap-5">
+          <!-- Big years card -->
+          <article class="rounded-[24px] bg-white/90 backdrop-blur p-6 md:p-8 shadow-soft">
+            <div class="flex items-start gap-6">
+              <div class="text-[color:var(--brand)] font-extrabold text-5xl leading-none">10</div>
+              <div class="flex-1">
+                <p class="text-sm font-semibold text-[color:var(--section)]">Years Of<br/>Experience</p>
+                <p class="mt-3 text-[15px] leading-7 text-[color:var(--body)]">
+                  Lorem ipsum dolor sit amet consectetur. Sit dictum mi blandit enim vel consectetur
+                  nam est risus. Tristique fringilla ac enim nibh scelerisque tempor ac. Lacus amet
+                  mauris diam diam pretium. Tellus lacus pharetra orci ac quis adipiscing arcu morbi nunc.
+                </p>
+              </div>
+              <span class="shrink-0 p-2 text-[color:var(--brand)]">↗</span>
+            </div>
+          </article>
+
+          <!-- Stat card 1 -->
+          <article class="rounded-[20px] bg-white p-5 md:p-6 shadow-soft flex items-center justify-between">
+            <div class="flex items-center gap-5">
+              <div class="text-4xl font-extrabold text-[color:var(--text)]">6k+</div>
+              <div>
+                <p class="font-semibold text-[color:var(--text)]">Certified Expert</p>
+                <p class="text-sm text-slate-500">In Team</p>
+              </div>
+            </div>
+            <span class="p-2 text-[color:var(--brand)]">↗</span>
+          </article>
+
+          <!-- Stat card 2 -->
+          <article class="rounded-[20px] bg-white p-5 md:p-6 shadow-soft flex items-center justify-between">
+            <div class="flex items-center gap-5">
+              <div class="text-4xl font-extrabold text-[color:var(--text)]">9k+</div>
+              <div>
+                <p class="font-semibold text-[color:var(--text)]">Successful</p>
+                <p class="text-sm text-slate-500">Completed Project</p>
+              </div>
+            </div>
+            <span class="p-2 text-[color:var(--brand)]">↗</span>
+          </article>
+
+          <!-- Stat card 3 -->
+          <article class="rounded-[20px] bg-white p-5 md:p-6 shadow-soft flex items-center justify-between">
+            <div class="flex items-center gap-5">
+              <div class="text-4xl font-extrabold text-[color:var(--text)]">4.9</div>
+              <div>
+                <p class="font-semibold text-[color:var(--text)]">Years Of</p>
+                <p class="text-sm text-slate-500">Experience</p>
+              </div>
+            </div>
+            <span class="p-2 text-[color:var(--brand)]">↗</span>
+          </article>
+        </div>
       </div>
     </div>
   </section>
