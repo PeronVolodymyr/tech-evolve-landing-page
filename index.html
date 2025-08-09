@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Evolve – Consultancy Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--brand:#1D58DD;--text:#161515;--body:#4B4B48;--section:#85A2CE}
+    body{font-family:Manrope,ui-sans-serif,system-ui}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.show{opacity:1;transform:none;animation:fadeInUp .6s both}
+    .shadow-soft{box-shadow:0 8px 30px rgba(0,0,0,.06)}
+    .circle-btn{width:44px;height:44px;border-radius:9999px;display:grid;place-items:center}
+    .hero-bg{background-image:url('./assets/images/banner%20images.png');background-size:cover;background-repeat:no-repeat;background-position:right}
+  </style>
+</head>
+<body class="text-[color:var(--body)] bg-[#F8FAFF]">
+  <div class="relative hero-bg">
+    <header class="sticky top-0 z-50 bg-transparent">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        <a href="#" class="flex items-center">
+          <img src="./assets/logo/logo_withot_text_blue.png" alt="Tech Evolve" class="h-10 w-auto" />
+          <span class="ml-2 font-semibold text-[color:var(--text)]">Tech Evolve</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-[color:var(--text)]/80">
+          <a href="#about" class="hover:text-[color:var(--brand)]">About Us</a>
+          <a href="#services" class="hover:text-[color:var(--brand)]">Services</a>
+          <a href="#features" class="hover:text-[color:var(--brand)]">Features</a>
+          <a href="#testimonials" class="hover:text-[color:var(--brand)]">Clients</a>
+          <a href="#contact" class="hover:text-[color:var(--brand)]">Contact</a>
+        </nav>
+        <a href="#contact" class="px-5 py-2 bg-[color:var(--brand)] text-white text-sm rounded-full font-semibold shadow-soft">Contact Us</a>
+      </div>
+    </header>
+
+    <section id="hero" class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="max-w-3xl">
+          <p class="uppercase tracking-[0.2em] text-xs font-semibold text-[color:var(--section)]">Consultancy Agency</p>
+          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight text-[color:var(--text)]">Empowering Your <span class="text-[color:var(--brand)]">Digital</span> Transformation</h1>
+          <p class="mt-6 text-lg">Empower your digital transformation journey: leveraging technology to streamline operations, enhance customer experiences, and accelerate innovation. We focus on optimizing end-to-end workflows, fostering a culture of agility, and creating future-ready solutions.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 font-semibold shadow-soft">Get Started
+              <img src="./assets/buttons/4.png" alt="" class="w-4 h-4"/>
+            </a>
+            <a href="#services" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 backdrop-blur px-6 py-3 font-semibold text-[color:var(--text)] shadow-soft hover:bg-white">Browse Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section aria-label="Trusted Partners" class="w-full bg-[color:var(--brand)] text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <p class="text-sm font-semibold tracking-wide">100+ Trusted Partners:</p>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6 text-white/90">
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+          <li class="text-center text-sm font-semibold">Logeipsum</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our History</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-bold text-[color:var(--text)]">
+          Trusted Experts in <span class="text-[color:var(--brand)]">Services</span> — Built on Experience, Fueled by Passion
+        </h2>
+        <p class="mt-5 text-[18px] leading-relaxed max-w-2xl">
+          We partner with clients to deliver measurable outcomes. Our team blends domain knowledge
+          with engineering excellence to ship robust, scalable systems.
+        </p>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          <div class="rounded-2xl bg-white/90 backdrop-blur border border-slate-200 shadow-soft p-6">
+            <p class="text-sm text-slate-500">10+ Years</p>
+            <p class="mt-1 text-lg font-semibold text-[color:var(--text)]">Of Successful Engagements</p>
+          </div>
+          <div class="rounded-2xl bg-white/90 backdrop-blur border border-slate-200 shadow-soft p-6">
+            <p class="text-sm text-slate-500">6k+</p>
+            <p class="mt-1 text-lg font-semibold text-[color:var(--text)]">Certified Experts</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="pointer-events-none absolute -inset-6 rounded-[28px] opacity-60 blur-2xl bg-gradient-to-r from-[#E9EEFF] via-[#F3F6FF] to-transparent"></div>
+        <img src="./assets/images/team.png" alt="Team working" class="relative w-full h-auto rounded-[28px] border border-slate-100 shadow-[0_20px_60px_rgba(0,0,0,0.07)] object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Who We Are</p>
+        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Built on Expertise, Driven by <span class="text-[color:var(--brand)]">Innovation</span></h3>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="reveal border border-slate-200 rounded-2xl p-6 bg-white shadow-soft text-center">
+          <img src="./assets/who_we_are/Mission.png" alt="Mission" class="mx-auto w-14 h-14" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">Our Mission</h4>
+          <p class="mt-2 text-sm">Maximize business impact through smart digital strategies and technology.</p>
+        </div>
+        <div class="reveal border-2 border-[color:var(--brand)]/30 rounded-2xl p-6 bg-white shadow-soft text-center">
+          <img src="./assets/who_we_are/Vission.png" alt="Vision" class="mx-auto w-14 h-14" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">Our Vision</h4>
+          <p class="mt-2 text-sm">Future-proof platforms that deliver consistent value.</p>
+        </div>
+        <div class="reveal border border-slate-200 rounded-2xl p-6 bg-white shadow-soft text-center">
+          <img src="./assets/who_we_are/Goals.png" alt="Values" class="mx-auto w-14 h-14" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">Our Value</h4>
+          <p class="mt-2 text-sm">Technology leadership with pragmatic delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our Services</p>
+        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Expert Consulting Services to Streamline, Scale, and Transform Your <span class="text-[color:var(--brand)]">Operations</span></h3>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <article class="reveal border border-slate-200 rounded-2xl bg-white p-6 shadow-soft">
+          <img src="./assets/images/3.png" alt="Cloud Services" class="w-14 h-14" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">Cloud Services</h4>
+          <p class="text-sm mt-2">Cloud strategy, landing zones, and secure infrastructure automation.</p>
+          <ul class="mt-4 space-y-2 text-sm list-disc pl-5">
+            <li>Cloud-Native Development</li>
+            <li>Infrastructure as Code</li>
+            <li>Multi-cloud &amp; Platform setup (AWS, GCP)</li>
+          </ul>
+          <a href="#contact" class="inline-flex mt-6 items-center gap-2 text-[color:var(--brand)] font-semibold">Learn more
+            <img src="./assets/buttons/3.png" alt="" class="w-4 h-4" />
+          </a>
+        </article>
+        <article class="reveal border border-slate-200 rounded-2xl bg-white p-6 shadow-soft">
+          <img src="./assets/images/4.png" alt="DevOps & Automation" class="w-14 h-14" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">DevOps &amp; Automation</h4>
+          <p class="text-sm mt-2">Ship faster and safer through robust CI/CD and observability.</p>
+          <ul class="mt-4 space-y-2 text-sm list-disc pl-5">
+            <li>CI/CD &amp; pipeline optimization</li>
+            <li>Observability (APM, tracing, metrics)</li>
+            <li>Reliability &amp; automation</li>
+          </ul>
+          <a href="#contact" class="inline-flex mt-6 items-center gap-2 text-[color:var(--brand)] font-semibold">Learn more
+            <img src="./assets/buttons/3.png" alt="" class="w-4 h-4" />
+          </a>
+        </article>
+        <article class="reveal border border-slate-200 rounded-2xl bg-white p-6 shadow-soft">
+          <img src="./assets/images/72274107_Uploading 1.png" alt="Application Development" class="w-14 h-14 object-contain" />
+          <h4 class="mt-3 font-semibold text-[color:var(--text)]">Application Development</h4>
+          <p class="text-sm mt-2">Modern, maintainable software engineered for impact.</p>
+          <ul class="mt-4 space-y-2 text-sm list-disc pl-5">
+            <li>Web &amp; Mobile Development</li>
+            <li>API Platforms &amp; Integrations</li>
+            <li>Modernization &amp; Engineering</li>
+          </ul>
+          <a href="#contact" class="inline-flex mt-6 items-center gap-2 text-[color:var(--brand)] font-semibold">Learn more
+            <img src="./assets/buttons/3.png" alt="" class="w-4 h-4" />
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto reveal">
+        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our Testimonial</p>
+        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">What Our <span class="text-[color:var(--brand)]">Clients</span> Say</h3>
+      </div>
+      <div class="mt-10 relative">
+        <div class="overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-soft">
+          <div id="slider-track" class="slider-track grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <figure class="p-6 border-r border-slate-100">
+              <div class="mb-3"><img src="./assets/buttons/5.png" alt="" class="w-6 h-6"/></div>
+              <blockquote class="text-sm">They took ownership from day one and delivered a robust platform on time.</blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/80?img=12" alt="Junoo Ali"/>
+                <div><p class="text-sm font-semibold text-[color:var(--text)]">Junoo Ali</p><p class="text-xs text-slate-500">Customer</p></div>
+              </figcaption>
+            </figure>
+            <figure class="p-6 border-r border-slate-100">
+              <div class="mb-3"><img src="./assets/buttons/5.png" alt="" class="w-6 h-6"/></div>
+              <blockquote class="text-sm">Great engineering culture and focus on outcomes. We saw improvements fast.</blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/80?img=22" alt="Tuljab Azam"/>
+                <div><p class="text-sm font-semibold text-[color:var(--text)]">Tuljab Azam</p><p class="text-xs text-slate-500">Customer</p></div>
+              </figcaption>
+            </figure>
+            <figure class="p-6 border-r border-slate-100">
+              <div class="mb-3"><img src="./assets/buttons/5.png" alt="" class="w-6 h-6"/></div>
+              <blockquote class="text-sm">Reliable, transparent, and pragmatic. Our DevOps metrics improved significantly.</blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/80?img=32" alt="Anil AJ"/>
+                <div><p class="text-sm font-semibold text-[color:var(--text)]">Anil AJ</p><p class="text-xs text-slate-500">Customer</p></div>
+              </figcaption>
+            </figure>
+            <figure class="p-6">
+              <div class="mb-3"><img src="./assets/buttons/5.png" alt="" class="w-6 h-6"/></div>
+              <blockquote class="text-sm">From discovery to delivery, the team stayed aligned with our success criteria.</blockquote>
+              <figcaption class="mt-4 flex items-center gap-3">
+                <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/80?img=42" alt="Kuljo Doctor"/>
+                <div><p class="text-sm font-semibold text-[color:var(--text)]">Kuljo Doctor</p><p class="text-xs text-slate-500">Customer</p></div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="flex justify-center gap-3 mt-4">
+          <button id="prev" aria-label="Previous" class="circle-btn border border-slate-200 bg-white shadow-soft">
+            <img src="./assets/buttons/1.png" alt=""/>
+          </button>
+          <button id="next" aria-label="Next" class="circle-btn border border-slate-200 bg-white shadow-soft">
+            <img src="./assets/buttons/2.png" alt=""/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+      <div class="reveal">
+        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Contact Us</p>
+        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Keep in <span class="text-[color:var(--brand)]">Touch</span></h3>
+        <ul class="mt-6 space-y-3">
+          <li class="flex items-center gap-3">✉️ hello@techevolve.com</li>
+          <li class="flex items-center gap-3">📞 +1 (555) 666-66-66</li>
+          <li class="flex items-center gap-3">📍 958 Long Branch St, Sacramento, CA 95835</li>
+        </ul>
+        <div class="mt-8 rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-soft">
+          <img src="./assets/images/map.png" alt="World map" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <form class="reveal grid gap-4 border border-slate-200 rounded-2xl bg-white p-6 shadow-soft">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="block text-sm font-semibold text-[color:var(--text)]">Name</label><input type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="Jane" /></div>
+          <div><label class="block text-sm font-semibold text-[color:var(--text)]">Email</label><input type="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="jane@company.com" /></div>
+        </div>
+        <div><label class="block text-sm font-semibold text-[color:var(--text)]">Message</label><textarea rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="Tell us about your project..."></textarea></div>
+        <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 font-semibold shadow-soft">
+          Submit Now <img src="./assets/buttons/4.png" alt="" class="w-4 h-4" />
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer matching JPEG design -->
+  <footer class="bg-[color:var(--brand)] text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+        <div class="flex items-center">
+          <img src="./assets/logo/logo_withot_text_white.png" alt="Tech Evolve" class="h-10 w-auto" />
+          <span class="ml-3 font-semibold">Tech Evolve</span>
+        </div>
+
+        <nav class="flex justify-center gap-8 text-sm">
+          <a href="#" class="hover:opacity-90">Home</a>
+          <a href="#about" class="hover:opacity-90">About Us</a>
+          <a href="#services" class="hover:opacity-90">Services</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+
+        <div class="flex justify-start md:justify-end gap-3">
+          <a href="#" aria-label="Facebook" class="p-2 rounded-xl bg-white/15 hover:bg-white/25 transition"><img src="./assets/social_icons/Fb.png" class="w-5 h-5" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram" class="p-2 rounded-xl bg-white/15 hover:bg-white/25 transition"><img src="./assets/social_icons/Insta.png" class="w-5 h-5" alt="Instagram"></a>
+          <a href="#" aria-label="X" class="p-2 rounded-xl bg-white/15 hover:bg-white/25 transition"><img src="./assets/social_icons/Twitter.png" class="w-5 h-5" alt="X"></a>
+          <a href="#" aria-label="LinkedIn" class="p-2 rounded-xl bg-white/15 hover:bg-white/25 transition"><img src="./assets/social_icons/LinkedIn.png" class="w-5 h-5" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#1B53D0]">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex flex-col md:flex-row items-center md:items-center justify-between gap-4 text-sm text-white/90">
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:underline">Terms of Services</a>
+          <a href="#" class="hover:underline">Privacy Policy</a>
+        </div>
+        <p>© <span id="year"></span> TechEvolve. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}})},{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
