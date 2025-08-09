@@ -32,7 +32,9 @@
           <a href="#testimonials" class="hover:text-[color:var(--brand)]">Clients</a>
           <a href="#contact" class="hover:text-[color:var(--brand)]">Contact</a>
         </nav>
-        <a href="#contact" class="px-5 py-2 bg-[color:var(--brand)] text-white text-sm rounded-full font-semibold shadow-soft">Contact Us</a>
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2 bg-[color:var(--brand)] text-white text-sm rounded-full shadow-soft">
+          Contact Us<span class="text-white">↗</span>
+        </a>
       </div>
     </header>
 
@@ -44,10 +46,9 @@
           <h1 class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight text-[color:var(--text)]">Empowering Your <span class="text-[color:var(--brand)]">Digital</span> Transformation</h1>
           <p class="mt-6 text-lg">Empower your digital transformation journey: leveraging technology to streamline operations, enhance customer experiences, and accelerate innovation. We focus on optimizing end-to-end workflows, fostering a culture of agility, and creating future-ready solutions.</p>
           <div class="mt-10 flex flex-wrap gap-4">
-            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 font-semibold shadow-soft">Get Started
-              <img src="assets/images/buttons/4.png" alt="" class="w-4 h-4"/>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 shadow-soft">
+              Get Started<span class="text-white">↗</span>
             </a>
-            <a href="#services" class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 backdrop-blur px-6 py-3 font-semibold text-[color:var(--text)] shadow-soft hover:bg-white">Browse Services</a>
           </div>
         </div>
       </div>
@@ -71,13 +72,13 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="py-20">
+  <section id="about" class="py-20 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
       <!-- Top row: label + title (left) and description (right) -->
       <div class="grid lg:grid-cols-12 gap-8 items-start">
         <div class="col-span-12 lg:col-span-6">
-          <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our History</p>
+          <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Our History</p>
           <h2 class="mt-2 text-3xl md:text-4xl font-bold text-[color:var(--text)]">
             Trusted Experts in <span class="text-[color:var(--brand)]">Services</span> — Built on Experience, Fueled by Passion
           </h2>
@@ -158,10 +159,10 @@
     </div>
   </section>
 
-  <section class="py-16 bg-white">
+  <section id="who-we-are" class="py-16">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto reveal">
-        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Who We Are</p>
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Who We Are</p>
         <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Built on Expertise, Driven by <span class="text-[color:var(--brand)]">Innovation</span></h3>
       </div>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
@@ -184,10 +185,10 @@
     </div>
   </section>
 
-  <section id="services" class="py-20 bg-slate-50">
+  <section id="services" class="py-20 bg-slate-50 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto reveal">
-        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our Services</p>
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Our Services</p>
         <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">Expert Consulting Services to Streamline, Scale, and Transform Your <span class="text-[color:var(--brand)]">Operations</span></h3>
       </div>
       <div class="mt-10 grid md:grid-cols-3 gap-6">
@@ -234,10 +235,41 @@
     </div>
   </section>
 
-  <section id="testimonials" class="py-20 bg-slate-50">
+  <section id="features" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Our Features</p>
+        <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">What We Can Do For Your <span class="text-[color:var(--brand)]">Business</span></h3>
+        <p class="mt-5">We shape strategies, cut costs, and improve performance with reliable engineering.</p>
+        <a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-6 py-3 shadow-soft">
+          Talk to us<span class="text-white">↗</span>
+        </a>
+      </div>
+      <div class="reveal grid gap-4">
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white shadow-soft flex items-start gap-3">
+          <img src="./assets/images/our_features/Frame.png" alt="" class="w-8 h-8" />
+          <div><h4 class="font-semibold text-brand.text">Strengthen Your Team</h4><p class="text-sm mt-2">Flexible engagement to scale your delivery capacity.</p></div>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white shadow-soft flex items-start gap-3">
+          <img src="./assets/images/our_features/2.png" alt="" class="w-8 h-8" />
+          <div><h4 class="font-semibold text-brand.text">Optimize Cost</h4><p class="text-sm mt-2">Right-size infrastructure and automate operations.</p></div>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white shadow-soft flex items-start gap-3">
+          <img src="./assets/images/our_features/3.png" alt="" class="w-8 h-8" />
+          <div><h4 class="font-semibold text-brand.text">Build Scalable Solutions</h4><p class="text-sm mt-2">Architect for resiliency and growth.</p></div>
+        </div>
+        <div class="border border-slate-200 rounded-2xl p-5 bg-white shadow-soft flex items-start gap-3">
+          <img src="./assets/images/our_features/Frame1.png" alt="" class="w-8 h-8" />
+          <div><h4 class="font-semibold text-brand.text">Improve Performance</h4><p class="text-sm mt-2">Measure, test, and iterate end-to-end.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 bg-slate-50 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto reveal">
-        <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Our Testimonial</p>
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Our Testimonial</p>
         <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">What Our <span class="text-[color:var(--brand)]">Clients</span> Say</h3>
       </div>
       <div class="mt-10 relative">
@@ -307,7 +339,7 @@
         <!-- Contact card -->
         <div class="col-span-12 lg:col-span-5">
           <div class="w-full border border-slate-200 rounded-2xl bg-white p-8 shadow-soft">
-            <p class="text-xs uppercase tracking-widest text-[color:var(--section)]/80">Contact Us</p>
+            <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold text-[color:var(--section)]/80">Contact Us</p>
             <h3 class="mt-2 text-3xl font-bold text-[color:var(--text)]">
               Keep in <span class="text-[color:var(--brand)]">Touch</span>
             </h3>
@@ -335,8 +367,8 @@
                 <textarea rows="5" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:border-[color:var(--brand)] focus:ring-[color:var(--brand)]" placeholder="Tell us about your project..."></textarea>
               </div>
 
-              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-8 py-3 font-semibold shadow-soft hover:bg-blue-700 transition">
-                Submit Now <img src="assets/images/buttons/4.png" alt="" class="w-4 h-4" />
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[color:var(--brand)] text-white px-8 py-3 shadow-soft hover:bg-blue-700 transition">
+                Submit Now<span class="text-white">↗</span>
               </button>
             </form>
           </div>
